@@ -1,11 +1,14 @@
 import java.util.Scanner;
 
 public class TripPlanner {
-    public static void main (String[] args){
+    public static void main(String[] args) {
+        part1();
+        part2();
+        part3();
         part4();
     }
 
-    public static void part1(){
+    public static void part1() {
 
         //PART_1
         //Greeting
@@ -28,7 +31,7 @@ public class TripPlanner {
 
     }
 
-    public static void part2(){
+    public static void part2() {
 
         //PART_2
         //Travel time and Budget
@@ -56,13 +59,13 @@ public class TripPlanner {
         Scanner input6 = new Scanner(System.in);
         float conversion = input6.nextFloat();
 
-        System.out.println("If you are traveling for " + days + " days, that is the same as " + days*24 + " hours or " + days*24*60 + " minutes.");
-        System.out.println("If you are going to spend " + money + " USD, that means per day you can spend up to " + money/days + " USD.");
-        System.out.println("Your total budget in " + symbol + " is " + money*conversion + " " + symbol + " , which per day  is " + (money*conversion)/days + symbol);
+        System.out.println("If you are traveling for " + days + " days, that is the same as " + days * 24 + " hours or " + days * 24 * 60 + " minutes.");
+        System.out.println("If you are going to spend " + money + " USD, that means per day you can spend up to " + money / days + " USD.");
+        System.out.println("Your total budget in " + symbol + " is " + money * conversion + " " + symbol + " , which per day  is " + (money * conversion) / days + symbol);
 
     }
 
-    public static void part3(){
+    public static void part3() {
 
         //PART_3
         //Time Difference
@@ -73,11 +76,11 @@ public class TripPlanner {
         int time = input7.nextInt();
 
         System.out.println("That means that when it is midnight at home it will be " + time + "h in our travel destination"
-                + " and when it's noon at home, it will be " + (12+time) + "h at your travel destination.");
+                + " and when it's noon at home, it will be " + (12 + time) + "h at your travel destination.");
 
     }
 
-    public static void part4(){
+    public static void part4() {
 
         //PART_4
         //Country Area
@@ -88,9 +91,9 @@ public class TripPlanner {
         Scanner input8 = new Scanner(System.in);
         double sqarea = input8.nextDouble();
 
-        double sqareaM2 = (sqarea*0.38610);
+        double sqareaM2 = (sqarea * 0.38610);
 
-        System.out.println("In miles2 that is " + sqareaM2 );
+        System.out.println("In miles2 that is " + sqareaM2);
 
     }
 
@@ -120,6 +123,6 @@ This code will need to be added to each of the methods you wrote for parts II, I
 
     To do fancy math in Java (cos, sin, squared etc…) you can use the Math Class. Here is the documentation for that: https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html All the code to accomplish the hacker problem should be in its own method.
 
-    /*
+    */
 
 }

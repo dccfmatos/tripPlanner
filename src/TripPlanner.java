@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class TripPlanner {
     public static void main(String[] args) {
-        part1();
+        //part1();
         part2();
-        part3();
-        part4();
+        //part3();
+        //part4();
     }
 
     public static void part1() {
@@ -97,25 +97,47 @@ public class TripPlanner {
 
     }
 
+    /* public static void part5() {
+
+        //PART_5
+        //Round to only have 2 decimal places
+        System.out.print("How many days are you going to spend travelling?");
+
+        //Saving days of travel from user input
+        Scanner input3 = new Scanner(System.in);
+        int days = input3.nextInt();
+
+        System.out.print("How much money, in USD, are you planning to spend on your trip?");
+
+        //Saving amount of money from user input
+        Scanner input4 = new Scanner(System.in);
+        float money = input4.nextFloat();
+
+        float money100 = money*100;
+
+        System.out.print("What is the three letter currency symbol for your travel destination?");
+
+        //Saving letter currency symbol from user input
+        Scanner input5 = new Scanner(System.in);
+        String symbol = input5.nextLine();
+
+        System.out.print("How many " + symbol + " are there in 1 USD?");
+
+        //Saving given conversion from user input
+        Scanner input6 = new Scanner(System.in);
+        float conversion = input6.nextFloat();
+
+        float conversion100 = conversion*100;
+
+        System.out.println("If you are traveling for " + days + " days, that is the same as " + days * 24 + " hours or " + days * 24 * 60 + " minutes.");
+        System.out.println("If you are going to spend " + (((int) money100)/100) + " USD, that means per day you can spend up to " + money / days + " USD.");
+        System.out.println("Your total budget in " + symbol + " is " + money * (((int) conversion100)/100) + " " + symbol + " , which per day  is " + (money * conversion) / days + symbol);
+
+    }
+*/
+
     /*
 
-    //PART_5
-    //Round to only have 2 decimal places
-    Part 5 – Round
-You may have noticed some of our math has produced numbers with lots of decimal places, making then not look very nice. In this part, you need to go back and clean up those answers so they each only have 2 decimal places.
-
-To do this you are going to use a combination of ints and doubles.
-
-First, multiply the number you want to reformat by 100.
-Cast the result of part 1 to an int like so:
-(int) answerFromOne
-This will drop any decimal places 3. Convert your answer back to a double, and move the decimal place over by 2 numbers like so:
-
-answerFromTwo / 100.0
-If you follow the above steps you should find that any of your answers are not limited to only 2 decimal places, however, those decimal places won’t be rounded, they will just be the first two from the original answer.
-
-This code will need to be added to each of the methods you wrote for parts II, III and IV.
-     */
 
     /*
     Part 6 – Hacker Problem - How Far?
